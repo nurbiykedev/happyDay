@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #aa8585;
+  display: flex;
+  flex-direction: column;
+  background: url(https://st.depositphotos.com/1823785/2618/i/450/depositphotos_26182475-stock-photo-happy-birthday.jpg) no-repeat center/cover;
+  object-fit: cover;
+  height: 100vh;
+  animation: body 2s ease-in-out;
+}
+@keyframes body{
+  0%{
+    transform: scaleX(0)
+  }
+  100%{
+    transform: scale(100px);
+  }
+}
+.hero{
+  -webkit-box-shadow: 13px 19px 114px -2px rgba(204,104,169,1);
+  -moz-box-shadow: 13px 19px 114px -2px rgba(204,104,169,1);
+  box-shadow: 13px 19px 114px -2px rgba(204,104,169,1);
+width: 700px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 300px 700px  ;
+border-radius: 50px 0;
+}
+h1{
+  text-align: center;
+  background-image: url(https://greenfreshflorals.com/cdn/shop/articles/how-florists-keep-flowers-alive-longer-839961.jpg?v=1708619213);
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+color: transparent;
+background-clip: text;
+font-family: "Rubik Scribble", system-ui;
+font-weight: 400;
+font-size: 45px;
+}
+
+input{
+  margin: 100px 0 20px 0;
+
+  border: none;
+  border-radius: 10px 0;
+  background:fixed;
+  -webkit-box-shadow: 13px 19px 114px -2px rgba(204,104,169,1);
+  -moz-box-shadow: 13px 19px 114px -2px rgba(204,104,169,1);
+  box-shadow: 13px 19px 114px -2px rgba(204,104,169,1);
+
+}
+button{
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 10px 0;
+  margin: 20px 0;
+  background: #eb93c9;
+}
+button:hover{
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 10px 0;
+  margin: 20px 0;
+  background: #dd0996;
+  -webkit-box-shadow: 43px 40px 124px 41px rgba(204,104,169,0.95);
+  -moz-box-shadow: 43px 40px 124px 41px rgba(204,104,169,0.95);
+  box-shadow: 43px 40px 124px 41px rgba(204,104,169,0.95);
+}
+.loading{
+  background: transparent;
+  width: 80px;
+height: 80px;
+position: relative;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 100px 300px;
+}
+
+.cards{
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  position: absolute;
+  border-radius: 50%;
+  animation: card 2s linear infinite;
+
+}
+.cards::before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e00a80;
+  box-shadow: 0 0 20px #faf9f9, 0 0 60px #e8f803;
+}
+
+@keyframes card{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+p{
+  margin: 100px;
+  color: #2e2d2d;
+  font-size: 25px;
+}
+h2{
+  margin: 100px;
+  color: #2e2d2d;
+  font-size: 30px;
+}
+
+
+
+
+.heart {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  font-size: 100px;
+  color: #ff4d94;
+  animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -100px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -200px) scale(0);
+  }
+}
+
+/* Добавьте этот код в файл Days.css */
+.heart-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  bottom: -20px; /* Расположение сердечек внизу */
+  left: 50%; /* Начальное положение по горизонтали */
+  transform: translateX(-50%); /* Центрирование по горизонтали */
+  font-size: 100px;
+  animation: float 2s ease-out forwards; /* Анимация сердечек */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1); /* Начальное положение и размер */
+    opacity: 1; /* Начальная непрозрачность */
+  }
+  100% {
+    transform: translateY(-100px) scale(1.5); /* Конечное положение и размер */
+    opacity: 0; /* Прозрачность */
+  }
+}
+
+
+
+/* Background.css */
+/* 
+body {
+  background-color: #000;
+  overflow: hidden;
+} */
+
+/* .stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 3s infinite;
+} */
+
+/* @keyframes twinkle {
+  1% {
+    opacity: 0;
+    background: #03c7f8;
+  }
+  50% {
+    opacity: 1;
+  background: #f8fc38;
+  }
+  100% {
+    opacity: 0;
+    background: #f15cae;
+  }
+} */
+
+/* Background.css */
+
+.smileys {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.smiley {
+  position: absolute;
+  font-size: 24px;
+  opacity: 0;
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Days.css */
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
