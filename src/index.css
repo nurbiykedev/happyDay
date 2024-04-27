@@ -185,46 +185,8 @@ h2{
 
 
 
-/* Background.css */
-/* 
-body {
-  background-color: #000;
-  overflow: hidden;
-} */
 
-/* .stars {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-}
 
-.star {
-  position: absolute;
-  background: white;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  opacity: 0;
-  animation: twinkle 3s infinite;
-} */
-
-/* @keyframes twinkle {
-  1% {
-    opacity: 0;
-    background: #03c7f8;
-  }
-  50% {
-    opacity: 1;
-  background: #f8fc38;
-  }
-  100% {
-    opacity: 0;
-    background: #f15cae;
-  }
-} */
-
-/* Background.css */
 
 .smileys {
   position: absolute;
@@ -256,14 +218,50 @@ body {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 4em;
+    font-size: 40px;
+    margin: 38px 50px;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 24px;
+    margin: 30px 50px;
   }
 
   p {
-    font-size: 1em;
+    font-size: 16px;
+    margin: 50px;
+  }
+}
+
+
+
+/* Hero.css */
+
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding: 20px;
+    width: 500px;
+    margin: 175px 69px;
+    height: 450px;
+  }
+  .cards {
+    width: 40px;
+    height: 40px;
+  }
+  .cards::before {
+    width: 15px;
+    height: 15px;
+  }
+  input{
+    width: 270px;
+    height: 60px;
+  }
+  button{
+    height: 50px;
   }
 }
